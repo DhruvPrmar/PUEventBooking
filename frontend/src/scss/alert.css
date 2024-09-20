@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.alert-container {
+  position: fixed;
+  z-index: 1000;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  border: 1px solid #ffa2a2;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding: 0.3rem 0.8rem;
+}
+.alert-container .alert-box {
+  display: flex;
+  align-items: center;
+}
+.alert-container .alert-box svg {
+  height: 25px;
+  fill: #ffa2a2;
+  margin-right: 8px;
+}
+.alert-container .alert-box .success-tick {
+  fill: #00efc0;
+}
+.alert-container .alert-box .alert {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.success-alert-container {
+  border: 1px solid #00efc0;
+}
+
+@media (max-width: 400px) {
+  .alert-container {
+    width: 70%;
+    top: 80%;
+    transform: translate(-50%, -20%);
+  }
+}/*# sourceMappingURL=alert.css.map */

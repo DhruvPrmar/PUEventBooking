@@ -1,0 +1,49 @@
+@import "mixin";
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+    margin: 0 2rem 0 2rem;
+    padding: 0;
+    @include text-color-primary();
+    @include primary-fonts();
+    @include background();
+    background-attachment: fixed;
+    height: 100vh;
+    user-select: none;
+    
+}
+
+a, button {
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+::-webkit-scrollbar-track {
+    background: #20252b;;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(255, 255, 255);
+}
+
+.card {
+    height: 10rem;
+    width: 10rem;
+    @include card();
+}
+
+p {
+    @include font-body16();
+}
+
+@media (max-width: 840px) {
+    body{
+        margin: 0 1rem 0 1rem;
+    }
+}

@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.admin-header-container {
+  width: 100%;
+}
+.admin-header-container .admin-header-contents {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.admin-header-container .admin-header-contents .img-container {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 1rem;
+}
+.admin-header-container .admin-header-contents .img-container img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.admin-header-container .admin-header-contents .nameNrole .name {
+  margin-top: 0px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.admin-header-container .admin-header-contents .nameNrole .role {
+  margin-bottom: 0;
+  color: #bac2ce;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.bottom-line {
+  border: 1px solid #BAC2CE;
+  margin-top: 1rem;
+  width: 100%;
+}/*# sourceMappingURL=adminHeader.css.map */

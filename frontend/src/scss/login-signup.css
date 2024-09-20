@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.signin-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.signin-container .logo-container {
+  height: 60px;
+}
+.signin-container .logo-container img {
+  height: 100%;
+  width: 100%;
+}
+.signin-container .gsi-material-button {
+  margin-top: 5rem;
+  background-color: #f2f2f2;
+  background-image: none;
+  border: 1px solid white;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #1f1f1f;
+  cursor: pointer;
+  font-family: "Roboto", arial, sans-serif;
+  font-size: 14px;
+  height: 40px;
+  letter-spacing: 0.25px;
+  outline: none;
+  overflow: hidden;
+  padding: 0.2rem 1.2rem;
+  position: relative;
+  text-align: center;
+  transition: background-color 0.218s, border-color 0.218s, box-shadow 0.218s;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: auto;
+  max-width: 400px;
+  min-width: -moz-min-content;
+  min-width: min-content;
+  transition: 0.3s;
+}
+.signin-container .gsi-material-button:hover {
+  background-color: transparent;
+  color: white;
+}
+.signin-container .gsi-material-button .gsi-material-button-icon {
+  height: 20px;
+  margin-right: 12px;
+  min-width: 20px;
+  width: 20px;
+}
+.signin-container .gsi-material-button .gsi-material-button-content-wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 100%;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+}
+.signin-container .gsi-material-button .gsi-material-button-contents {
+  flex-grow: 1;
+  font-family: "Roboto", arial, sans-serif;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: top;
+}
+.signin-container .gsi-material-button .gsi-material-button-state {
+  transition: opacity 0.218s;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.signin-container .gsi-material-button:disabled {
+  cursor: default;
+  background-color: rgba(255, 255, 255, 0.3803921569);
+}
+.signin-container .gsi-material-button:disabled .gsi-material-button-state {
+  background-color: rgba(31, 31, 31, 0.1215686275);
+}
+.signin-container .gsi-material-button:disabled .gsi-material-button-contents {
+  opacity: 38%;
+}
+.signin-container .gsi-material-button:disabled .gsi-material-button-icon {
+  opacity: 38%;
+}
+.signin-container .gsi-material-button:not(:disabled):active .gsi-material-button-state,
+.signin-container .gsi-material-button:not(:disabled):focus .gsi-material-button-state {
+  background-color: #001d35;
+  opacity: 12%;
+}/*# sourceMappingURL=login-signup.css.map */

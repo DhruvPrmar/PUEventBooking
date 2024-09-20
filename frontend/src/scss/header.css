@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.top-contents {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+.top-contents .left-content .logo {
+  height: 45px;
+}
+.top-contents .right-content {
+  display: flex;
+  align-items: center;
+}
+.top-contents .right-content .signin-btn {
+  border: none;
+  cursor: pointer;
+  background-color: white;
+  color: #20252b;
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+  font-size: 16px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.top-contents .right-content .user {
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+.top-contents .right-content .user .pfp-container {
+  border-radius: 100%;
+  height: 40px;
+  width: 40px;
+  overflow: hidden;
+}
+.top-contents .right-content .user .pfp-container img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.top-contents .right-content .qr {
+  display: none;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+@media (max-width: 470px) {
+  .top-contents .left-content .logo {
+    height: 35px;
+  }
+  .top-contents .right-content .user .pfp-container {
+    height: 35px;
+    width: 35px;
+  }
+  .top-contents .right-content .qr {
+    display: unset;
+    margin-right: 1rem;
+  }
+}
+@media (max-width: 340px) {
+  .top-contents .left-content .logo {
+    height: 25px;
+  }
+}/*# sourceMappingURL=header.css.map */

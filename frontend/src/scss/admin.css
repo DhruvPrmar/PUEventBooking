@@ -1,0 +1,387 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.admin-auth-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+.admin-auth-container form {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+.admin-auth-container form label {
+  margin-top: 1.5rem;
+  margin-bottom: 0.2rem;
+}
+.admin-auth-container form input {
+  background-color: transparent;
+  padding: 0.7rem;
+  border: 1px solid white;
+  color: white;
+}
+.admin-auth-container form button {
+  margin-top: 2rem;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: white;
+  color: #20252b;
+  border-radius: 8px;
+  border: 1px solid white;
+  background-color: white;
+  color: #20252b;
+  transition: 0.3s;
+}
+.admin-auth-container form button:hover {
+  background-color: transparent;
+  color: white;
+}
+.admin-auth-container .error-msg {
+  color: #d63031;
+}
+.admin-auth-container a {
+  color: white;
+}
+
+.admin-passReset-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+.admin-passReset-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+}
+.admin-passReset-container form input {
+  background-color: transparent;
+  padding: 0.7rem;
+  width: 80%;
+  border: 1px solid white;
+  color: white;
+  margin-bottom: 2rem;
+}
+.admin-passReset-container form button {
+  width: 80%;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: white;
+  color: #20252b;
+  border-radius: 8px;
+  border: 1px solid white;
+  background-color: white;
+  color: #20252b;
+  transition: 0.3s;
+}
+.admin-passReset-container form button:hover {
+  background-color: transparent;
+  color: white;
+}
+
+@media (max-width: 800px) {
+  .admin-auth-container .title {
+    font-size: 22px;
+  }
+  .admin-auth-container form {
+    width: 80%;
+    font-size: 14px;
+  }
+  .admin-auth-container form button {
+    font-size: 16px;
+  }
+}
+@media (max-width: 300px) {
+  .admin-auth-container form {
+    width: 95%;
+  }
+}
+.manage-admins-container .audience-top,
+.audience-container .audience-top {
+  display: flex;
+  align-items: center;
+}
+.manage-admins-container .audience-top a,
+.audience-container .audience-top a {
+  margin-right: 1rem;
+}
+.manage-admins-container .audience-top a .back-svg,
+.audience-container .audience-top a .back-svg {
+  height: 20px;
+  width: 20px;
+  fill: white;
+}
+.manage-admins-container .audience-top .title span,
+.audience-container .audience-top .title span {
+  font-weight: 300;
+}
+.manage-admins-container .manage-admins-top,
+.audience-container .manage-admins-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.manage-admins-container .manage-admins-top .title,
+.audience-container .manage-admins-top .title {
+  padding: 1.2rem;
+  padding-left: 0;
+  margin: 0;
+}
+.manage-admins-container .manage-admins-top a,
+.audience-container .manage-admins-top a {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  background-color: white;
+  color: #20252b;
+  border-radius: 8px;
+  text-decoration: none;
+  padding: 0.5rem 1.2rem;
+}
+.manage-admins-container .manage-admins-top a svg,
+.audience-container .manage-admins-top a svg {
+  margin-right: 10px;
+  height: 18px;
+  width: 18px;
+}
+.manage-admins-container .admin-table,
+.manage-admins-container .audience-table,
+.audience-container .admin-table,
+.audience-container .audience-table {
+  border: 1px solid white;
+  border-radius: 5px;
+  width: 100%;
+  height: 600px;
+  overflow: scroll;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.manage-admins-container .admin-table .admin-table-top,
+.manage-admins-container .admin-table .audience-table-top,
+.manage-admins-container .audience-table .admin-table-top,
+.manage-admins-container .audience-table .audience-table-top,
+.audience-container .admin-table .admin-table-top,
+.audience-container .admin-table .audience-table-top,
+.audience-container .audience-table .admin-table-top,
+.audience-container .audience-table .audience-table-top {
+  width: 98%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.manage-admins-container .admin-table .admin-table-top a,
+.manage-admins-container .admin-table .admin-table-top button,
+.manage-admins-container .admin-table .audience-table-top a,
+.manage-admins-container .admin-table .audience-table-top button,
+.manage-admins-container .audience-table .admin-table-top a,
+.manage-admins-container .audience-table .admin-table-top button,
+.manage-admins-container .audience-table .audience-table-top a,
+.manage-admins-container .audience-table .audience-table-top button,
+.audience-container .admin-table .admin-table-top a,
+.audience-container .admin-table .admin-table-top button,
+.audience-container .admin-table .audience-table-top a,
+.audience-container .admin-table .audience-table-top button,
+.audience-container .audience-table .admin-table-top a,
+.audience-container .audience-table .admin-table-top button,
+.audience-container .audience-table .audience-table-top a,
+.audience-container .audience-table .audience-table-top button {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  background-color: white;
+  color: #20252b;
+  border-radius: 8px;
+  text-decoration: none;
+  padding: 0.7rem 1.2rem;
+}
+.manage-admins-container .admin-table .admin-table-top a svg,
+.manage-admins-container .admin-table .admin-table-top button svg,
+.manage-admins-container .admin-table .audience-table-top a svg,
+.manage-admins-container .admin-table .audience-table-top button svg,
+.manage-admins-container .audience-table .admin-table-top a svg,
+.manage-admins-container .audience-table .admin-table-top button svg,
+.manage-admins-container .audience-table .audience-table-top a svg,
+.manage-admins-container .audience-table .audience-table-top button svg,
+.audience-container .admin-table .admin-table-top a svg,
+.audience-container .admin-table .admin-table-top button svg,
+.audience-container .admin-table .audience-table-top a svg,
+.audience-container .admin-table .audience-table-top button svg,
+.audience-container .audience-table .admin-table-top a svg,
+.audience-container .audience-table .admin-table-top button svg,
+.audience-container .audience-table .audience-table-top a svg,
+.audience-container .audience-table .audience-table-top button svg {
+  margin-right: 10px;
+  height: 18px;
+  width: 18px;
+}
+.manage-admins-container .admin-table .admin-table-top input,
+.manage-admins-container .admin-table .audience-table-top input,
+.manage-admins-container .audience-table .admin-table-top input,
+.manage-admins-container .audience-table .audience-table-top input,
+.audience-container .admin-table .admin-table-top input,
+.audience-container .admin-table .audience-table-top input,
+.audience-container .audience-table .admin-table-top input,
+.audience-container .audience-table .audience-table-top input {
+  background-color: transparent;
+  padding: 10px;
+  width: 300px;
+  border: 1px solid white;
+  color: white;
+  border-radius: 2px;
+}
+.manage-admins-container .admin-table table,
+.manage-admins-container .audience-table table,
+.audience-container .admin-table table,
+.audience-container .audience-table table {
+  margin-bottom: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+  width: 98%;
+}
+.manage-admins-container .admin-table table tr th,
+.manage-admins-container .audience-table table tr th,
+.audience-container .admin-table table tr th,
+.audience-container .audience-table table tr th {
+  background-color: rgba(128, 128, 128, 0.5);
+  padding: 10px;
+}
+.manage-admins-container .admin-table table tr td,
+.manage-admins-container .audience-table table tr td,
+.audience-container .admin-table table tr td,
+.audience-container .audience-table table tr td {
+  text-align: center;
+  padding: 0.8rem 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+}
+.manage-admins-container .admin-table table tr td svg,
+.manage-admins-container .audience-table table tr td svg,
+.audience-container .admin-table table tr td svg,
+.audience-container .audience-table table tr td svg {
+  height: 30px;
+  width: 30px;
+  fill: white;
+}
+.manage-admins-container .admin-table table tr td .delete-btn,
+.manage-admins-container .audience-table table tr td .delete-btn,
+.audience-container .admin-table table tr td .delete-btn,
+.audience-container .audience-table table tr td .delete-btn {
+  fill: #d63031;
+}
+.manage-admins-container .admin-table table tr td button,
+.manage-admins-container .audience-table table tr td button,
+.audience-container .admin-table table tr td button,
+.audience-container .audience-table table tr td button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.manage-admins-container .admin-table table tr td button svg,
+.manage-admins-container .audience-table table tr td button svg,
+.audience-container .admin-table table tr td button svg,
+.audience-container .audience-table table tr td button svg {
+  height: 20px;
+  width: 20px;
+  fill: white;
+}
+.manage-admins-container .admin-table table tr .img-name,
+.manage-admins-container .audience-table table tr .img-name,
+.audience-container .admin-table table tr .img-name,
+.audience-container .audience-table table tr .img-name {
+  display: flex;
+  align-items: center;
+}
+.manage-admins-container .admin-table table tr .img-name .pfp-container,
+.manage-admins-container .audience-table table tr .img-name .pfp-container,
+.audience-container .admin-table table tr .img-name .pfp-container,
+.audience-container .audience-table table tr .img-name .pfp-container {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 1rem;
+}
+.manage-admins-container .admin-table table tr .img-name .pfp-container img,
+.manage-admins-container .audience-table table tr .img-name .pfp-container img,
+.audience-container .admin-table table tr .img-name .pfp-container img,
+.audience-container .audience-table table tr .img-name .pfp-container img {
+  height: 100%;
+  width: 100%;
+}
+
+.new-admin-container {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.new-admin-container form {
+  margin-top: 1rem;
+  width: 420px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.new-admin-container form label {
+  margin-bottom: 5px;
+  align-self: flex-start;
+}
+.new-admin-container form .required::after {
+  content: " *";
+  color: #d63031;
+}
+.new-admin-container form input {
+  width: 95%;
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+.new-admin-container form input[type=date]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+.new-admin-container form select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 100%;
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+.new-admin-container form select option {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: #20252b;
+}
+.new-admin-container form button {
+  width: 440px;
+  border: none;
+  cursor: pointer;
+  background-color: white;
+  color: #20252b;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: white;
+  color: #20252b;
+  border: 1px solid white;
+}/*# sourceMappingURL=admin.css.map */

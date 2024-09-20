@@ -1,0 +1,250 @@
+@import "mixin";
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+.profile-container {
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .profile-top {
+        width: 100%;
+        button {
+            background-color: transparent;
+            border: 0;
+            a {
+                color: white;
+                text-decoration: none;
+                .back-svg {
+                    fill: white;
+                    height: 30px;
+                    width: 30px;
+                }
+            }
+        }
+        .top-gradient {
+           @include top-gradient();
+        }
+    }
+
+    .pfp-name {
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .pfp-container {
+            height: 120px;
+            width: 120px;
+            border-radius: 50%;
+            overflow: hidden;
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .cardWrap {
+        width: 31em;
+        margin: 2em auto;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .card {
+            height: 10em;
+            float: left;
+            position: relative;
+            padding: 1em;
+        }
+
+        .cardLeft {
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+            width: 19em;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            flex-direction: column;
+
+            .leftTop {
+                margin-top: -0.8rem;
+                .text {
+                    @include text-color-secondary();
+                    @include font-body14();
+                    margin-top: -5px;
+                }
+
+                .title {
+                    h3 {
+                        line-height: 22px;
+                    }
+                }
+            }
+            a {
+                color: white;
+                font-weight: 300;
+                @include font-body14();
+                letter-spacing: 0.5px;
+            }
+        }
+
+        .cardRight {
+            width: 7em;
+            border-left: 2px dashed rgba(255, 255, 255, 0.5);
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &:before,
+            &:after {
+                content: "";
+                position: absolute;
+                display: block;
+                width: 0.9em;
+                height: 0.9em;
+                background: #20252b;
+                border-radius: 50%;
+                left: -0.5em;
+            }
+            &:before {
+                top: -0.4em;
+            }
+            &:after {
+                bottom: -0.4em;
+            }
+
+            .poster-container {
+                align-self: center;
+                border-radius: 10px;
+                border: 2px solid #ff4646;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                img {
+                    border-radius: 10px;
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    transition: 0.5s;
+                }
+            }
+        }
+    }
+
+    .bookings-btn {
+        width: 30em;
+        @include card();
+        a {
+            padding: 0 1rem;
+            text-decoration: none;
+            color: white;
+            width: 100%;
+            display: flex;
+            align-items: center;
+
+            svg {
+                height: 45px;
+                width: 45px;
+                fill: white;
+            }
+            .text {
+                margin-left: 1rem;
+                h4 {
+                    @include font-h5();
+                }
+                p {
+                    margin-top: -10px;
+                    @include text-color-secondary();
+                    @include font-body14();
+                }
+            }
+        }
+    }
+    .signout-btn {
+        @include logout-btn();
+        margin: 2em 0;
+        transition: 0.3s;
+
+        &:hover {
+            background-color: transparent;
+        }
+
+        button {
+            cursor: pointer;
+            border: 0;
+            background-color: transparent;
+            padding: 0.8rem 1rem;
+            display: flex;
+            align-items: center;
+            color: white;
+            letter-spacing: 0.5px;
+            @include font-body16();
+            svg {
+                height: 30px;
+                width: 30px;
+                fill: white;
+                margin-right: 1rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 570px) {
+    .profile-container {
+        .pfp-name {
+            .pfp-container {
+                height: 80px;
+                width: 80px;
+            }
+        }
+        .cardWrap {
+            width: 100%;
+            .cardLeft {
+                width: 50%;
+                .leftTop {
+                    .title {
+                        h3 {
+                            @include font-h5();
+                        }
+                    }
+                }
+            }
+            .cardRight {
+                width: 30%;
+                .poster-container {
+                    width: 120px;
+                }
+            }
+        }
+        .bookings-btn {
+            width: 100%;
+        }
+        .signout-btn {
+            width: 100%;
+        }
+    }
+}
+@media (max-width: 340px) {
+    .profile-container {
+        .cardWrap {
+            .cardLeft {
+                .leftTop {
+                    .title {
+                        h3 {
+                            @include font-body14();
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,108 @@
+@mixin primary-color-bg() {
+    background-color: #ff4646;
+}
+
+@mixin text-color-primary() {
+    color: #ffffff;
+}
+
+@mixin text-color-secondary() {
+    color: #bac2ce;
+}
+
+@mixin element-primary() {
+    color: #16213e;
+}
+
+@mixin sucess() {
+    color: #00efc0;
+}
+
+@mixin alert() {
+    color: #d63031;
+}
+
+@mixin button() {
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    color: #20252b;
+    border-radius: 8px;
+}
+
+@mixin font-h1 {
+    font-size: 28px;
+    font-weight: 600;
+}
+@mixin font-h2 {
+    font-size: 22px;
+    font-weight: 600;
+}
+@mixin font-h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+@mixin font-h4 {
+    font-size: 18px;
+    font-weight: 600;
+}
+@mixin font-h5 {
+    font-size: 16px;
+    font-weight: 600;
+}
+@mixin font-body16 {
+    font-size: 16px;
+    font-weight: 300;
+}
+@mixin font-body14 {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+@mixin card {
+    background-color: rgba(174, 174, 174, 0.3);
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+}
+
+@mixin background() {
+    // background: linear-gradient(050deg, rgba(65,50,110,0.4) 0%, rgba(24,32,72,0.4) 100%), url(../lib/img/bg-image.jpg);
+    background: #20252b;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+@mixin primary-fonts() {
+    font-family: "Roboto", sans-serif;
+}
+
+@mixin top-gradient() {
+    z-index: -1;
+    width: 100%;
+    height: 5rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0 auto;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+@mixin alert-container() {
+    // background-color: rgba(214, 48, 49, 0.7);
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 0.3rem 0.8rem;
+}
+
+@mixin logout-btn() {
+    cursor: pointer;
+    background-color: #d63031;
+    border: 1px solid #d63031;
+    color: white;
+    border-radius: 8px;
+}
+
+@mixin aestrik(){
+    content: " *";
+    color: #d63031;
+}

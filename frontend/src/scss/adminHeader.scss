@@ -1,0 +1,44 @@
+@import "mixin";
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+
+.admin-header-container{
+    width: 100%;
+
+    .admin-header-contents{
+        width: 100%;
+        display: flex;
+        align-items: center;
+
+        .img-container{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 1rem;
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        .nameNrole{
+            .name{
+                margin-top: 0px;
+                @include font-h5();
+            }
+            .role{
+                margin-bottom: 0;
+                // margin-top: -10px;
+                @include text-color-secondary();
+                @include font-body14();
+            }
+        }
+    }
+}
+.bottom-line{
+    border: 1px solid #BAC2CE;
+    margin-top: 1rem;
+    width: 100%;
+}
